@@ -7,6 +7,8 @@ Monarch is a command line tool for developing scalable, maintainable Elm apps pr
 1. Node 4+
 2. Elm 0.17
 
+**until version 1 assume unstable** 
+
 ## Starting a new Single Page Application
 
 ```
