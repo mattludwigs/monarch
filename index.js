@@ -13,10 +13,12 @@ program
 
 program
   .command("new <name>")
+  .description("create a new Elm single page application (monarch-app)")
   .action(newProject);
 
 program
   .command("component <name>")
+  .description("create a new Elm component for a monarch-app")
   .action(newComponent);
 
 program.parse(process.argv);
