@@ -2,11 +2,16 @@
 
 Monarch is a command line tool for developing scalable, maintainable Elm apps productively.
 
+## System Requirements
+
+1. Node 4+
+2. Elm 0.17
+
 ## Starting a new Single Page Application
 
 ```
 $ monarch new awesome-app
-$ cd awesome-app && nmp install && elm-package install
+$ cd awesome-app && npm install && elm-package install -y
 $ npm run dev
 ```
 
