@@ -6,6 +6,7 @@ var path = require("path");
 var fs = require("fs-extra");
 var templateDir = path.join(__dirname, "../", "templates/component");
 var componentsDir = pwd + "/src/components/";
+var _ = require("lodash");
 
 var monarchUtils = require("../lib");
 
@@ -25,7 +26,7 @@ function handleComponentTemplates(name) {
       if (!item.stats.isDirectory()) {
         fs.readFile(item.path, function (err, chunk) {
           var itemPath = item.path.replace(templateDir, "")
-          var result = monarchUtils.templateString(chunk.toString(), {name: monarchUtils.capitalize(name)});
+          var result = monarchUtils.templateString(chunk.toString(), {name: _.replace(_.startCase(name), " ", "") });
 
           fs.writeFile(path.join(componentsDir + name + itemPath), result, function (err) {
             if (err) {
