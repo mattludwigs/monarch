@@ -2,12 +2,20 @@
 
 Monarch is a command line tool for developing scalable, maintainable Elm apps productively.
 
+**until version 1 assume unstable**
+
 ## System Requirements
 
 1. Node 4+
 2. Elm 0.17
 
-**until version 1 assume unstable**
+
+## Install
+
+```
+$ npm install monarch-cli -g
+```
+
 
 ## Get help
 
