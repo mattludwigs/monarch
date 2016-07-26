@@ -1,6 +1,6 @@
 module Router.Routes exposing (Route(..))
 
 type Route
-  = IndexRoute
+  = NotFoundRoute
+  | IndexRoute
   | AboutRoute
-  | NotFoundRoute
